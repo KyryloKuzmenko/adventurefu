@@ -12,6 +12,7 @@
 .header-content-wrap {
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
   @include media(desktop) {
     padding-left: 50px;
     padding-right: 50px;
@@ -95,6 +96,8 @@
   font-weight: 400;
   font-size: 24px;
   color: #fff;
+  white-space: nowrap;
+
 }
 
 .backdrop.show {
@@ -105,18 +108,16 @@
 }
 
 .backdrop {
-  position: fixed;
-  top: 45px;
-  left: 225px;
-  right: 60px;
-  width: 178px;
-  height: 245px;
+  position: absolute;
+  top: 40px;
   z-index: 1001;
   border-radius: 0 0 20px 20px;
   background: #c8a478;
   opacity: 0;
   visibility: hidden;
-
+  width: 178px;
+// height: 245px;
+right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +126,9 @@
 .backdrop-list {
   display: flex;
   flex-direction: column;
+  gap: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .backdrop-link {
@@ -132,4 +136,5 @@
 font-weight: 400;
 font-size: 16px;
 color: #fff;
+
 }

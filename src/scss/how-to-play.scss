@@ -1,0 +1,91 @@
+.how-to-play-content-wrap {
+  background-image: url('../img/mobile/htp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 996px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/htp-desktop.png');
+    height: 736px;
+  }
+}
+
+.how-to-play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  margin-top: 66px;
+  @include media(desktop) {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.htp-card-1 {
+  @include media(desktop) {
+    margin-left: 162px;
+    margin-top: 180px;
+  }
+}
+
+.how-to-play-list .htp-card-2 {
+  @include media(desktop) {
+    margin-top: 130px;
+  }
+}
+
+
+.htp-card-3 {
+  @include media(desktop) {
+    margin-top: 100px;
+    margin-left: 110px;
+  }
+}
+
+.how-to-play-step-content ,
+.how-to-play-step {
+  width: 200px;
+
+}
+
+.how-to-play-step:nth-child(even) {
+  margin-left: 150px;
+  @include media(desktop) {
+    margin-left: 180px;
+  }
+}
+.how-to-play-step.htp-card-4 {
+  @include media(desktop) {
+    margin-top: 30px;
+    margin-left: 1070px;
+  }
+}
+
+.htp-card-5 {
+  @include media(desktop) {
+    margin-left: 780px;
+    margin-top: -30px;
+  }
+}
+
+.how-to-play-step.htp-card-6 {
+  @include media(desktop) {
+   margin-left: 260px;
+    margin-top: -130px;
+  }
+}
+
+.how-to-play-step-title {
+  font-weight: 700;
+font-size: 16px;
+color: #fff;
+}
+
+.how-to-play-step-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}

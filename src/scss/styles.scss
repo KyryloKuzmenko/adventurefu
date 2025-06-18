@@ -1,5 +1,5 @@
 @import './header.scss';
-@import './home.scss';
+@import './hero.scss';
 @import './about.scss';
 @import './features.scss';
 @import './companions.scss';
@@ -9,6 +9,7 @@
 @import './reviews.scss';
 @import './contact.scss';
 @import './faq.scss';
+@import './footer.scss';
 
 
 .container {
@@ -44,9 +45,10 @@ main {
   margin: 0 auto;
   background-image: url('../img/mobile/leaves.png');
   background-repeat: no-repeat;
-
+  padding-top: 80px;
   @include media(desktop) {
     max-width: 1440px;
     background-image: url('../img/desktop/leaves-desktop.png');
+    padding-top: 100px;
   }
 }
