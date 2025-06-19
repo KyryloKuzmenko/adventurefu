@@ -2,6 +2,7 @@
   @include media(desktop) {
     display: flex;
     flex-direction: column;
+
     height: 100%;
     padding-bottom: 100px;
   }
@@ -11,26 +12,26 @@
   padding-bottom: 50px;
   padding-top: 55px;
   @include media(desktop) {
-
     padding-left: 115px;
     padding-right: 115px;
-    height: 1233px;
+    // height: 1233px;
+    padding-bottom: 100px;
   }
 }
 
 .features-content-wrap .features-swiper {
   margin-top: 30px;
   @include media(desktop) {
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     overflow: visible;
     margin-top: 83px;
-    // height: 1200px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
   }
 }
+
+
+
 
 .features-swiper .features-item {
   width: 282px;
@@ -45,7 +46,9 @@
   @include media(desktop) {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px 75px;
+    justify-content: center;
+align-items: center;
+    gap: 150px 75px;
     // height: 800px;
   }
 }

@@ -1,0 +1,59 @@
+
+
+.footer-content-wrap {
+  background: #996e43;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 20px 10px;
+  @include media(desktop) {
+    padding-bottom: 50px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-link-item {}
+
+.footer-link {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.footer-contact {
+  margin-bottom: 15px;
+
+}
+
+.footer-contact-email {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+.footer-rights {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  @include media(desktop) {
+
+    font-size: 17px;
+  }
+}

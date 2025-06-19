@@ -6,10 +6,13 @@
 @import './how-to-play.scss';
 @import './rewards.scss';
 @import './explore.scss';
+@import './gallery.scss';
 @import './reviews.scss';
 @import './contact.scss';
 @import './faq.scss';
 @import './footer.scss';
+@import './cookie-modal.scss';
+@import './cpt.scss';
 
 
 .container {
@@ -24,6 +27,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  background-color: #1E1E1E;
+
 }
 
 h1,

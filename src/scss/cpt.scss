@@ -1,0 +1,85 @@
+.privacy-content-wrap,
+.terms-content-wrap,
+.cookies-content-wrap {
+  background-color: #996e43;
+  padding: 50px 35px;
+  @include media(desktop) {
+    padding: 60px 50px;
+  }
+}
+
+.back-img {
+  width: 26px;
+  height: 26px;
+  @include media(desktop) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.privacy-content,
+.terms-content,
+.cookies-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-content,
+.terms-content,
+.cookies-content {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.privacy-title,
+.terms-title,
+.cookies-title {
+  font-size: 24px;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    font-size: 54px;
+  }
+}
+
+.privacy-subtitle,
+.terms-subtitle,
+.cookies-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.privacy-text,
+.terms-text,
+.cookies-text {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.privacy-list-item,
+.terms-list-item,
+.cookies-list-item {
+  display: flex;
+}
+
+.privacy-link,
+.terms-link,
+.cookies-link {
+  color: #fff;
+  text-decoration: underline;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

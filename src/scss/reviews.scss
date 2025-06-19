@@ -1,0 +1,79 @@
+.reviews-content-wrap {
+  padding: 50px 15px;
+  position: relative;
+  @include media(desktop) {
+    padding: 0 150px 100px 150px;
+
+  }
+}
+
+.reviews-swiper {
+  margin-top: 30px;
+  @include media(desktop) {
+    margin-top: 50px;
+  }
+}
+
+.reviews-swiper .reviews-swiper-slide {
+  border-radius: 39px;
+  width: 245px;
+  height: 219px;
+  background: #c59c6a;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 10px;
+  justify-content: center;
+  box-sizing: border-box;
+  @include media(desktop) {
+    width: 554px;
+    height: 302px;
+    // &:nth-child(odd) {
+    // }
+    &:nth-child(even) {
+      margin-top: 200px;
+    }
+  }
+}
+
+.reviews-name,
+.reviews-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 21px;
+  }
+}
+
+.reviews-text {
+  font-style: italic;
+}
+
+.reviews-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  // pointer-events: none;
+  z-index: 2;
+  padding: 0;
+  @include media(desktop) {
+    padding: 0 70px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.r-arrow {
+  width: 34px;
+  height: 34px;
+  @include media(desktop) {
+    width: 48px;
+    height: 48px;
+  }
+}

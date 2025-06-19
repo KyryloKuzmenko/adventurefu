@@ -1,0 +1,142 @@
+
+
+.cookie-modal {
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.cookies-wrap {
+
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+
+  width: calc(100% - 30px);
+  max-width: 375px;
+  height: 286px;
+  padding: 48px 18px 20px;
+  background: #c59c6a;
+  border-radius: 20px 20px 0 0;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 1440px;
+    height: 242px;
+    padding: 42px 103px 42px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 30px 30px 0 0;
+  }
+}
+
+
+.cookkie-text-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+.cookies-modal-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+
+.cookies-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
+}
+
+
+.cookie-btn {
+  position: relative;
+  width: 214px;
+  height: 45px;
+  border-radius: 19px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity .25s;
+
+  &:hover,
+  &:focus-visible {
+    opacity: .8;
+  }
+
+  @include media(desktop) {
+    width: 302px;
+    height: 45px;
+  }
+}
+
+
+.cookies-accept {
+  background: #593f3f;
+}
+
+/* Decline — только обводка */
+.cookies-decline {
+  background: transparent;
+  border: 3px solid #593f3f;
+}
+
+
+.cookie-text-btn {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  color: inherit;
+
+
+  .cookies-accept & { color: #fff; }
+  .cookies-decline & { color: #593f3f; }
+
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+
+.close-cookies-modal-btn {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
